@@ -1,0 +1,24 @@
+PCBNEW-LibModule-V1  2012-06-14T21:47:53 CEST
+# encoding utf-8
+$INDEX
++out4
+$EndINDEX
+$MODULE +out4
+Po 0 0 0 15 4FDA3F4C 4FDA3F24 ~~
+Li +out4
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+Sc 4FDA3F24
+AR /4FDA30E3/4FDA28AE
+Op 0 0 0
+T0 0 -1200 400 400 0 100 N V 21 N "+out4"
+T1 0 1100 400 400 0 100 N I 21 N "CONN_1"
+$PAD
+Sh "1" R 787 787 0 0 0
+Dr 394 0 0
+At STD N 00E0FFFF
+Ne 1 "N-000010"
+Po 0 0
+$EndPAD
+$EndMODULE  +out4
+$EndLIBRARY
