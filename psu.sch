@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 2012-06-14T22:52:09 CEST
+EESchema Schematic File Version 2  date Sun 17 Jun 2012 01:12:30 PM CEST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,14 +29,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:switchgang-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
 Sheet 6 6
 Title ""
-Date "14 jun 2012"
+Date "17 jun 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,6 +43,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Label 3200 1750 0    60   ~ 0
+in
+Text Label 4150 2600 0    60   ~ 0
+sw
+Text Label 5350 2550 0    60   ~ 0
+out
 Connection ~ 2200 1650
 Wire Wire Line
 	5350 2300 5350 2600
@@ -129,7 +134,7 @@ AR Path="/4FDA311D/4FDA28D2" Ref="+in1"  Part="1"
 AR Path="/4FDA310B/4FDA28D2" Ref="+in2"  Part="1" 
 AR Path="/4FDA30F5/4FDA28D2" Ref="+in3"  Part="1" 
 AR Path="/4FDA30E3/4FDA28D2" Ref="+in4"  Part="1" 
-F 0 "+in1" H 2280 1450 40  0000 L CNN
+F 0 "+in5" H 2280 1450 40  0000 L CNN
 F 1 "CONN_1" H 2200 1505 30  0001 C CNN
 	1    2200 1450
 	0    -1   -1   0   
@@ -143,7 +148,7 @@ AR Path="/4FDA311D/4FDA28CA" Ref="-in1"  Part="1"
 AR Path="/4FDA310B/4FDA28CA" Ref="-in2"  Part="1" 
 AR Path="/4FDA30F5/4FDA28CA" Ref="-in3"  Part="1" 
 AR Path="/4FDA30E3/4FDA28CA" Ref="-in4"  Part="1" 
-F 0 "-in1" H 2280 3700 40  0000 L CNN
+F 0 "-in5" H 2280 3700 40  0000 L CNN
 F 1 "CONN_1" H 2200 3755 30  0001 C CNN
 	1    2200 3700
 	0    1    1    0   
@@ -157,7 +162,7 @@ AR Path="/4FDA311D/4FDA28BC" Ref="-out1"  Part="1"
 AR Path="/4FDA310B/4FDA28BC" Ref="-out2"  Part="1" 
 AR Path="/4FDA30F5/4FDA28BC" Ref="-out3"  Part="1" 
 AR Path="/4FDA30E3/4FDA28BC" Ref="-out4"  Part="1" 
-F 0 "-out1" H 5430 3450 40  0000 L CNN
+F 0 "-out5" H 5430 3450 40  0000 L CNN
 F 1 "CONN_1" H 5350 3505 30  0001 C CNN
 	1    5350 3450
 	0    1    1    0   
@@ -171,7 +176,7 @@ AR Path="/4FDA311D/4FDA28AE" Ref="+out1"  Part="1"
 AR Path="/4FDA310B/4FDA28AE" Ref="+out2"  Part="1" 
 AR Path="/4FDA30F5/4FDA28AE" Ref="+out3"  Part="1" 
 AR Path="/4FDA30E3/4FDA28AE" Ref="+out4"  Part="1" 
-F 0 "+out1" H 5430 2150 40  0000 L CNN
+F 0 "+out5" H 5430 2150 40  0000 L CNN
 F 1 "CONN_1" H 5350 2205 30  0001 C CNN
 	1    5350 2150
 	0    -1   -1   0   
@@ -185,7 +190,7 @@ AR Path="/4FDA311D/4FDA2888" Ref="#PWR01"  Part="1"
 AR Path="/4FDA310B/4FDA2888" Ref="#PWR03"  Part="1" 
 AR Path="/4FDA30F5/4FDA2888" Ref="#PWR05"  Part="1" 
 AR Path="/4FDA30E3/4FDA2888" Ref="#PWR07"  Part="1" 
-F 0 "#PWR01" H 1250 1400 20  0001 C CNN
+F 0 "#PWR09" H 1250 1400 20  0001 C CNN
 F 1 "+BATT" H 1250 1550 30  0000 C CNN
 	1    1250 1450
 	1    0    0    -1  
@@ -199,7 +204,7 @@ AR Path="/4FDA311D/4FDA284E" Ref="#PWR02"  Part="1"
 AR Path="/4FDA310B/4FDA284E" Ref="#PWR04"  Part="1" 
 AR Path="/4FDA30F5/4FDA284E" Ref="#PWR06"  Part="1" 
 AR Path="/4FDA30E3/4FDA284E" Ref="#PWR08"  Part="1" 
-F 0 "#PWR02" H 3050 3550 30  0001 C CNN
+F 0 "#PWR010" H 3050 3550 30  0001 C CNN
 F 1 "GND" H 3050 3480 30  0001 C CNN
 	1    3050 3550
 	1    0    0    -1  
@@ -213,7 +218,7 @@ AR Path="/4FDA311D/4EB549F2" Ref="C2"  Part="1"
 AR Path="/4FDA310B/4EB549F2" Ref="C7"  Part="1" 
 AR Path="/4FDA30F5/4EB549F2" Ref="C12"  Part="1" 
 AR Path="/4FDA30E3/4EB549F2" Ref="C17"  Part="1" 
-F 0 "C2" H 1500 2250 50  0000 L CNN
+F 0 "C22" H 1500 2250 50  0000 L CNN
 F 1 "220uF/35V" H 1400 1550 50  0000 L CNN
 	1    1550 1900
 	1    0    0    -1  
@@ -227,7 +232,7 @@ AR Path="/4FDA311D/4EB5492E" Ref="C1"  Part="1"
 AR Path="/4FDA310B/4EB5492E" Ref="C6"  Part="1" 
 AR Path="/4FDA30F5/4EB5492E" Ref="C11"  Part="1" 
 AR Path="/4FDA30E3/4EB5492E" Ref="C16"  Part="1" 
-F 0 "C1" H 1100 2000 50  0000 L CNN
+F 0 "C21" H 1100 2000 50  0000 L CNN
 F 1 "10uF/35V" H 850 1800 50  0000 L CNN
 	1    1250 1900
 	1    0    0    -1  
@@ -241,7 +246,7 @@ AR Path="/4FDA311D/4D04D22A" Ref="C4"  Part="1"
 AR Path="/4FDA310B/4D04D22A" Ref="C9"  Part="1" 
 AR Path="/4FDA30F5/4D04D22A" Ref="C14"  Part="1" 
 AR Path="/4FDA30E3/4D04D22A" Ref="C19"  Part="1" 
-F 0 "C4" H 5400 2900 50  0000 L CNN
+F 0 "C24" H 5400 2900 50  0000 L CNN
 F 1 "4.7uF/16V" H 5400 2700 50  0000 L CNN
 	1    5350 2800
 	1    0    0    -1  
@@ -255,7 +260,7 @@ AR Path="/4FDA311D/4D04D0AE" Ref="C3"  Part="1"
 AR Path="/4FDA310B/4D04D0AE" Ref="C8"  Part="1" 
 AR Path="/4FDA30F5/4D04D0AE" Ref="C13"  Part="1" 
 AR Path="/4FDA30E3/4D04D0AE" Ref="C18"  Part="1" 
-F 0 "C3" H 5100 2900 50  0000 L CNN
+F 0 "C23" H 5100 2900 50  0000 L CNN
 F 1 "220uF/35V" H 4900 2500 50  0000 L CNN
 	1    5050 2800
 	1    0    0    -1  
@@ -269,7 +274,7 @@ AR Path="/4FDA311D/4D04CFE3" Ref="L1"  Part="1"
 AR Path="/4FDA310B/4D04CFE3" Ref="L2"  Part="1" 
 AR Path="/4FDA30F5/4D04CFE3" Ref="L3"  Part="1" 
 AR Path="/4FDA30E3/4D04CFE3" Ref="L4"  Part="1" 
-F 0 "L1" V 4600 2600 40  0000 C CNN
+F 0 "L5" V 4600 2600 40  0000 C CNN
 F 1 "330uH" V 4750 2600 40  0000 C CNN
 	1    4650 2600
 	0    -1   -1   0   
@@ -283,7 +288,7 @@ AR Path="/4FDA311D/4D04CF74" Ref="D1"  Part="1"
 AR Path="/4FDA310B/4D04CF74" Ref="D2"  Part="1" 
 AR Path="/4FDA30F5/4D04CF74" Ref="D3"  Part="1" 
 AR Path="/4FDA30E3/4D04CF74" Ref="D4"  Part="1" 
-F 0 "D1" H 4250 2900 40  0000 C CNN
+F 0 "D5" H 4250 2900 40  0000 C CNN
 F 1 "SK 34" H 4250 2700 40  0000 C CNN
 	1    4250 2800
 	0    -1   -1   0   
@@ -297,7 +302,7 @@ AR Path="/4FDA311D/4D04CF13" Ref="C5"  Part="1"
 AR Path="/4FDA310B/4D04CF13" Ref="C10"  Part="1" 
 AR Path="/4FDA30F5/4D04CF13" Ref="C15"  Part="1" 
 AR Path="/4FDA30E3/4D04CF13" Ref="C20"  Part="1" 
-F 0 "C5" H 2250 3200 50  0000 L CNN
+F 0 "C25" H 2250 3200 50  0000 L CNN
 F 1 "82pF" H 2250 3000 50  0000 L CNN
 	1    2200 3100
 	1    0    0    -1  
@@ -311,7 +316,7 @@ AR Path="/4FDA311D/4D04CED4" Ref="R2"  Part="1"
 AR Path="/4FDA310B/4D04CED4" Ref="R5"  Part="1" 
 AR Path="/4FDA30F5/4D04CED4" Ref="R8"  Part="1" 
 AR Path="/4FDA30E3/4D04CED4" Ref="R11"  Part="1" 
-F 0 "R2" V 4430 2300 50  0000 C CNN
+F 0 "R14" V 4430 2300 50  0000 C CNN
 F 1 "18k" V 4350 2300 50  0000 C CNN
 	1    4350 2300
 	0    1    1    0   
@@ -325,7 +330,7 @@ AR Path="/4FDA311D/4D04CEB9" Ref="R3"  Part="1"
 AR Path="/4FDA310B/4D04CEB9" Ref="R6"  Part="1" 
 AR Path="/4FDA30F5/4D04CEB9" Ref="R9"  Part="1" 
 AR Path="/4FDA30E3/4D04CEB9" Ref="R12"  Part="1" 
-F 0 "R3" V 3980 3100 50  0000 C CNN
+F 0 "R15" V 3980 3100 50  0000 C CNN
 F 1 "11k" V 3900 3100 50  0000 C CNN
 	1    3900 3100
 	1    0    0    -1  
@@ -339,7 +344,7 @@ AR Path="/4FDA311D/4D04CE98" Ref="R1"  Part="1"
 AR Path="/4FDA310B/4D04CE98" Ref="R4"  Part="1" 
 AR Path="/4FDA30F5/4D04CE98" Ref="R7"  Part="1" 
 AR Path="/4FDA30E3/4D04CE98" Ref="R10"  Part="1" 
-F 0 "R1" V 2730 2000 50  0000 C CNN
+F 0 "R13" V 2730 2000 50  0000 C CNN
 F 1 "0R22" V 2650 2000 50  0000 C CNN
 	1    2650 2000
 	0    1    1    0   
@@ -353,7 +358,7 @@ AR Path="/4FDA311D/4D04CE01" Ref="U1"  Part="1"
 AR Path="/4FDA310B/4D04CE01" Ref="U2"  Part="1" 
 AR Path="/4FDA30F5/4D04CE01" Ref="U3"  Part="1" 
 AR Path="/4FDA30E3/4D04CE01" Ref="U4"  Part="1" 
-F 0 "U1" H 3200 2900 60  0000 L CNN
+F 0 "U5" H 3200 2900 60  0000 L CNN
 F 1 "MC34063" H 3150 2200 60  0000 L CNN
 	1    3050 2550
 	1    0    0    -1  
